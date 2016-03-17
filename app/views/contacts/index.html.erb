@@ -1,7 +1,8 @@
 <h2>Contact list:</h2>
 <% @contacts.each do |contact|%>
-  <h4><%= contact.first_name %> <%= contact.last_name %></h4>
+  <h4><%= contact.full_name %></h4>
   <p><%= contact.email %></p>
   <p><%= contact.phone_number %></p>
+  <p>Updated at: <%= contact.friendly_updated_at %></p>
 <% end %>
 
